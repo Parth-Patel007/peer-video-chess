@@ -1,0 +1,44 @@
+/* fluid board size */
+:root {
+  --board-size: clamp(300px, 80vw, 600px);
+}
+
+/* overall layout */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* video panes */
+.videos {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  .videos { flex-direction: column; width: 100%; }
+  .videos video { width: 100%; height: auto; }
+}
+
+/* clocks */
+.clock {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.white-clock { color: #333; }
+.black-clock { color: #333; }
+
+/* resign result */
+.result-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+}
+.result-screen a {
+  display: block;
+  margin: 8px 0;
+  color: #646cff;
+}

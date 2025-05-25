@@ -1,0 +1,13 @@
+/* src/components/GamePage.css */
+.board-wrapper {
+  width: var(--board-size);
+  aspect-ratio: 1;
+  margin: 16px auto;
+}
+
+.controls-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap; /* will wrap buttons on narrow screens */
+}

@@ -1,0 +1,16 @@
+// tsconfig.json
+{
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "composite": true,           // ← now this root config is also “buildable”
+    "noEmit": false,             // ← composite projects must be allowed to emit
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "types": ["vite/client", "node", "jest"],
+    "jsx": "react-jsx"            // ← allow JSX in .tsx (including tests)
+  },
+  "include": ["src/**/*"]
+}
