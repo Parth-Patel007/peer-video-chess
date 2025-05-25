@@ -35,3 +35,6 @@ Thumbs.db
 
 # Optional: VS Code workspace settings
 *.code-workspace
+
+# local env
+.env
